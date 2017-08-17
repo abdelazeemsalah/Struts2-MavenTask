@@ -1,0 +1,102 @@
+*{margin:0;padding:0;}
+body{background:#ebebeb;font-family:Arial, Helvetica, sans-serif;font-size:12px;color:#666;line-height:16px;}
+input, select, textarea{font-family:Arial, Helvetica, sans-serif;font-size:11px;color:#666;}
+a{outline:none;}
+ul{list-style:none;}
+img{border:none;}
+.clearfix{padding:0;margin:0;clear:both;height:0;font-size:0;line-height:0;display:block;} 
+
+
+/* radio and check box listing */
+.chkitem{width:100%;overflow:hidden;}
+.chkitem label.chklabel{display:inline;float:left;/*padding-right:10px;*/line-height:normal;}
+.chkitem .chkinput{margin-right:2px;_margin-right:0px;float:left;width:14px;height:14px;}
+/* */
+.wrapper{width:1000px;margin:0 auto;padding:10px 0 0;}
+
+/* */
+.content{padding:5px 0px;}
+.content .lftCntCol{width:235px;float:left;}
+.content .midCntCol{padding:0 250px;}
+.content .midCntCol2{padding:0 250px 0 0;}
+.content .rhtCntCol{width:235px;float:right;}
+.content .rhtCntCol .advBox1{margin-bottom:10px;}
+.content .pageTitle{font-size:18px;color:#007a00;margin-bottom:10px;font-weight:normal;text-transform:uppercase;}
+
+
+
+.verifiedReq {display: none;}
+
+
+
+
+.button{
+	background-color:#C60A0A;
+	color:white;
+	cursor:pointer;
+	border: none;
+	float: left;
+}
+
+/* Registration page */
+.dvMainForm{ }
+.dvMainForm .row{width:100%;float:left;padding:5px 0;}
+.dvMainForm .col{width:360px;padding:0px;float:left;}
+.dvMainForm .inputLabel{float:left;text-align:right;width:150px;padding:3px 0 0 0;font-weight:bold;}
+.dvMainForm .inputField{padding-left:155px;}
+.dvMainForm .asterisk{color:red;}
+.dvMainForm .textField{border:1px solid #b3b3b3;padding:2px 3px;width:190px;font-size:12px;float:left;}
+.dvMainForm .selectField{border:1px solid #b3b3b3;padding:2px 3px;width:198px;font-size:12px;float:left;}
+.dvMainForm label.error{padding:2px 0 0 0;font-size:11px;color:#ff0000;}
+.dvMainForm .rdo label{margin-right:5px;}
+.dvMainForm .chkitem{width:100px!important;float:left;}
+.dvMainForm .chkitem label.chklabel{width:auto!important; font-weight:normal!important;}
+.dvMainForm input.required,.dvMainForm select.required{color:#666 !important; }
+.dvMainForm input.error,.dvMainForm select.error{color:#ff0000 !important; }
+.dvMainForm .submitBtn{width:205px;padding:10px 5px 5px 150px;float:left;}
+
+
+/* Buttons */
+.button{padding:3px 8px 4px;display:inline;background:#e82929 url(../images/button-bg.gif) top left repeat-x;border:none;color:#fff;cursor:pointer;font-weight:bold;font-size:12px;text-transform:uppercase;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}
+.button:hover{background:#e82929 url(../images/button-bg1.gif) top left repeat-x;}
+
+
+.content {
+font-family: sans-serif;
+font-size: small;
+}
+
+
+.taskTable {
+	border-width: 1px 1px 1px 1px;
+	border-spacing: 2px;
+	border-style: outset outset outset outset;
+	border-color: black black black black;
+	border-collapse: collapse;
+}
+
+.taskTable td {
+	border-width: 1px 1px 1px 1px;
+	border-spacing: 2px;
+	border-style: outset outset outset outset;
+	border-color: black black black black;
+	border-collapse: collapse;
+}
+
+.taskTable th {
+	border-width: 1px 1px 1px 1px;
+	border-spacing: 2px;
+	border-style: outset outset outset outset;
+	border-color: black black black black;
+	border-collapse: collapse;
+	background-color: rgb(255, 255, 255);
+}
+
+.odd {
+background-color: #FFFFF0;
+}
+
+.even {
+background-color: #FAF0E6;
+}
+

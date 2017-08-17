@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+<constant name="struts.convention.default.parent.package" value="common"/>
+	<package name="default" extends="struts-default">
+	
+		<result-types>
+			<result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" />
+		</result-types>
+		
+		<action name="*Link" method="{1}" class="com.link.action.LinkAction">
+			<result name="welcome" type="tiles">welcome</result>
+			<result name="createNewTaskLink" type="tiles">newTask</result>
+
+		</action>
+
+		<action name="viewTaskList" method="viewTaskList" class="com.task.action.TaskMangementAction">
+			<result name="success" type="tiles">taskList</result>
+			
+		</action>
+		<action name="completeTask" method="completeTask" class="com.task.action.TaskMangementAction">
+			<result name="success" type="tiles">taskList</result>
+		</action>
+		
+		<action name="helloWorld" class="helloWorldClass">
+            <result name="SUCCESS" type="tiles">springInjection</result>
+        </action>
+		
+	</package>
+	
+	<package name="common" extends="jsr303">
+<result-types>
+			<result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" />
+		</result-types>
+		 <default-interceptor-ref name="jsr303ValidationStack"/>
+	<action name="createTask" method="addTask" class="com.task.action.TaskMangementAction">
+			<result name="success" type="tiles">taskList</result>
+			<result name="input" type="tiles">newTask</result>
+		</action>
+       
+
+    </package>
+	
+	
+	 
+</struts>

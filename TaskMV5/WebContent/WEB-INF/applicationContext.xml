@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+    <bean id="helloWorldClass" class="com.test.srutsspringintegration.HelloWorld" >
+    	<property name="message" value="Hello World!" />
+    </bean>
+    <bean id="taskmanagerservice" class="com.person.dao.TaskManagerService" />
+    <bean id="person" class="com.person.model.Person" />
+    	
+    	
+    	
+</beans>
+
+
